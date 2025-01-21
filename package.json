@@ -7,7 +7,7 @@
     "build": "pnpm run genapi && next build",
     "start": "next start",
     "lint": "next lint",
-    "genapi": "npx @openapitools/openapi-generator-cli generate -i ./openapi/dist.json -g typescript-axios -o src/utils/api/zykj/ && node scripts/rewriteapi.js"
+    "genapi": "npx @openapitools/openapi-generator-cli generate -i ./dist.json -g typescript-axios -o src/utils/api/zykj/ && node scripts/rewriteapi.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.4.0",
